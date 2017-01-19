@@ -6,7 +6,7 @@ applications:
   env:
     SPRING_PROFILES_ACTIVE: prod, cloudfoundry
   host: digitalbanking-accountservice
-  command: java -jar target/accountservices-1.0.jar
+  command: $PWD/.java-buildpack/open_jdk_jre/bin/java -jar target/accountservices-1.0.jar
   disk_quota: 1024M
   services:
   - digitalbankingDb
